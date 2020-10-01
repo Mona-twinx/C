@@ -36,7 +36,7 @@ int main(void)
    for(i=0;i<MAX;i++)	 
    {
       printf("學生姓名: ");
-      gets(student[i].name);			/* 輸入學生姓名 */
+      gets(student[i].name);//gets is dangerous to use..so use scanf			/* 輸入學生姓名 */
       printf("數學成績: ");
       scanf("%d",&student[i].math);		/* 輸入學生數學成績 */
       fflush(stdin);            			/* 清空緩衝區內的資料 */
